@@ -150,7 +150,7 @@ This is still a bit experimental and dirty – let us know if you have a better
 Install the package:
 
 ```
-$ yarn add react-native-config
+$ npm i -S imchintan/react-native-config
 ```
 
 Link the library:
@@ -199,7 +199,7 @@ defaultConfig {
 When Proguard is enabled (which it is by default for Android release builds), it can rename the `BuildConfig` Java class in the minification process and prevent React Native Config from referencing it. To avoid this, add an exception to `android/app/proguard-rules.pro`:
 
     -keep class com.mypackage.BuildConfig { *; }
-    
+
 `mypackage` should match the `package` value in your `app/src/main/AndroidManifest.xml` file.
 
 ## Testing
